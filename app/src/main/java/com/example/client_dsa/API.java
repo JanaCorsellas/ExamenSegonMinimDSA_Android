@@ -19,6 +19,10 @@ public interface API {
     @GET("items/llista")
     Call<Item> getItems(@Body Item llistaItem);
 
+    //s'envia un formulari
+    @POST("usuaris/formulariSolicitud")
+    Call<Formulari> formulari(@Body Formulari formulari);
+
     //FALTA @POST per quan compres un item
 
     //Per auntenticar l'usuari

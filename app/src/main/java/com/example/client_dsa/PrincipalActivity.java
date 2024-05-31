@@ -1,5 +1,7 @@
 package com.example.client_dsa;
 
+import static com.example.client_dsa.R.*;
+
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,6 +20,7 @@ public class PrincipalActivity extends AppCompatActivity {
         Button usuari = findViewById(R.id.Usuari);
         Button botiga = findViewById(R.id.Botiga);
         Button jugar = findViewById(R.id.jugar);
+        Button formulari = findViewById(R.id.formulari);
 
         botiga.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +36,13 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        formulari.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(PrincipalActivity.this, FormulariActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void anarUsuari(View view)
@@ -43,6 +53,11 @@ public class PrincipalActivity extends AppCompatActivity {
     public void anarBotiga(View view)
     {
         Intent intent = new Intent(PrincipalActivity.this, BotigaActivity.class);
+        startActivity(intent);
+    }
+    public void anarFormulari(View view)
+    {
+        Intent intent = new Intent(PrincipalActivity.this, FormulariActivity.class);
         startActivity(intent);
     }
 

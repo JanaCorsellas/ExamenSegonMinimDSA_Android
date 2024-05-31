@@ -40,14 +40,14 @@ public class RegistreActivity extends AppCompatActivity {
         id = String.valueOf(rand.nextInt(1000));
 
         /*Assignació de les referències als elements de la interfície*/
-        nom = findViewById(R.id.nom);
-        cognom = findViewById(R.id.cognom);
-        nomUsuari = findViewById(R.id.nomUsuarii);
-        contra = findViewById(R.id.contra1);
+        nom = findViewById(R.id.data);
+        cognom = findViewById(R.id.title);
+        nomUsuari = findViewById(R.id.message);
+        contra = findViewById(R.id.sender);
         contra2 = findViewById(R.id.contra2);
         progressBar = findViewById(R.id.progressBar2);
 
-        registre = findViewById(R.id.registre);
+        registre = findViewById(R.id.enviar);
 
         api = APIimp.getAPI();
 
